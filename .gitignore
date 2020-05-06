@@ -3,3 +3,6 @@
 *~
 .gdb_history
 .dir-locals.el
+
+result*
+flake.lock
