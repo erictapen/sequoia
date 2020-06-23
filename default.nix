@@ -22,6 +22,7 @@ let
             LIBCLANG_PATH = "${pkgs.llvmPackages.libclang}/lib";
           };
           sequoia-openpgp = attrs: { buildInputs = with pkgs; [ gmp ]; };
+          sequoia-openpgp-ffi = attrs: { buildInputs = with pkgs; [ gmp ]; };
           sequoia-ipc = attrs: { buildInputs = with pkgs; [ gmp ]; };
           sequoia-guide = attrs: { buildInputs = with pkgs; [ gmp ]; };
           sequoia-store = attrs: {
