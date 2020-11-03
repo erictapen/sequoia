@@ -1,6 +1,4 @@
 {
-  edition = 201909;
-
   description = "Sequoia";
 
   inputs.nixpkgs = {
