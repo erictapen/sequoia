@@ -29,6 +29,9 @@ let
             nativeBuildInputs = with pkgs; [ capnproto ];
             buildInputs = with pkgs; [ gmp sqlite ];
           };
+          sequoia-sq = attrs: {
+            buildInputs = with pkgs; [ gmp sqlite ];
+          };
           sequoia-ffi = attrs: {
             # sequoia-ffi includes a file from another crate...
             # I'm pretty sure what they are doing is wrong but I don't know how
@@ -51,6 +54,6 @@ let
   );
 in
 {
-  sequoia = crates.workspaceMembers.sequoia.build;
-  sequoia-tool = crates.workspaceMembers.sequoia-tool.build;
+  sequoia-sq = crates.workspaceMembers.sequoia-sq.build;
+  # sequoia-tool = crates.workspaceMembers.sequoia-tool.build;
 }

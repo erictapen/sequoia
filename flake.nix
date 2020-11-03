@@ -13,19 +13,19 @@
     , nixpkgs
     }: rec {
 
-      packages.x86_64-linux.sequoia = (
+      packages.x86_64-linux.sequoia-sq = (
         import ./default.nix {
           inherit nixpkgs;
         }
-      ).sequoia;
+      ).sequoia-sq;
 
-      packages.x86_64-linux.sequoia-tool = (
-        import ./default.nix {
-          inherit nixpkgs;
-        }
-      ).sequoia-tool;
+      # packages.x86_64-linux.sequoia-tool = (
+      #   import ./default.nix {
+      #     inherit nixpkgs;
+      #   }
+      # ).sequoia-tool;
 
-      defaultPackage.x86_64-linux = packages.x86_64-linux.sequoia-tool;
+      defaultPackage.x86_64-linux = packages.x86_64-linux.sequoia-sq;
 
     };
 
