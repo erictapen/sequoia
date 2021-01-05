@@ -1,12 +1,7 @@
 {
   description = "Sequoia";
 
-  inputs.nixpkgs = {
-    type = "github";
-    owner = "NixOS";
-    repo = "nixpkgs";
-    ref = "nixos-unstable";
-  };
+  inputs.nixpkgs.url = "github:NixOS/Nixpkgs/nixos-unstable";
 
   outputs =
     { self
