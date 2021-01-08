@@ -1,7 +1,7 @@
 {
   description = "Sequoia";
 
-  inputs.nixpkgs.url = "github:NixOS/Nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:erictapen/Nixpkgs/sequoia-crate-overrides";
 
   outputs =
     { self

@@ -2,16 +2,16 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1610041835,
-        "narHash": "sha256-WXWaMt8W746JDgLls4g3AfCuKbcQUNL/YjikJIgsCGQ=",
-        "owner": "NixOS",
+        "lastModified": 1610119483,
+        "narHash": "sha256-EJPIof8+pbVqmOMqDK9C5Ry49NdMNpPc3uYEgklZRaQ=",
+        "owner": "erictapen",
         "repo": "Nixpkgs",
-        "rev": "f211631c1cb3e94828c7650b5d12c1e5a89e0e16",
+        "rev": "bb61409b919450bc1f75ed0e0c3b4ec9284db189",
         "type": "github"
       },
       "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "owner": "erictapen",
+        "ref": "sequoia-crate-overrides",
         "repo": "Nixpkgs",
         "type": "github"
       }
